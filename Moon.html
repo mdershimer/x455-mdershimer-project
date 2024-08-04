@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Miranda Dershimer</title>
+    <title>Miranda Dershimer Moon</title>
     <script
       type="text/JavaScript"
       src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
@@ -16,37 +16,25 @@
     <style></style>
   </head>
   <body>
-    <div id="Home">
-      <div id="desktop-video">
-        <video autoplay muted loop style="width: 100%">
-          <source src="./images/website background a 1.mp4" />
-        </video>
-      </div>
-      <div id="mobile-video">
-        <video autoplay muted loop style="width: 100%">
-          <source src="./images/website mobile background.mp4" />
-        </video>
-      </div>
-    </div>
     <div>
       <div class="header-bar">
-        <a href="#Home"
+        <a href="index.html"
           ><img
             style="padding: 30px 0px 10px 0px; width: 100%"
             src="images/name logo 3.png"
             alt="Miranda Dershimer logo"
         /></a>
-        <a class="header-text" href="#Home">Home</a>
+        <a class="header-text" href="index.html">Home</a>
         <a class="header-text" href="New-Work.html">New Work</a>
         <a class="header-text" href="Art.html">Art</a>
-        <a class="header-text" href="Moon.html">Moon</a>
+        <a class="header-text" href="Monn.html">Moon</a>
         <a class="header-text" href="Films.html">Films</a>
         <a class="header-text" href="Design.html">Design</a>
         <img class="search-cart-icon" src="images/search and cart icons.png" />
       </div>
     </div>
     <div class="small-logo">
-      <a href="#Home"
+      <a href="index.html"
         ><img
           style="padding: 15px 0px 10px 0px; width: 80%"
           src="images/name logo 3.png"
@@ -61,7 +49,7 @@
         <a href="javascript:void(0)" class="sidebar-line" onclick="my_close()"
           >Close</a
         >
-        <a class="sidebar-line" onclick="my_close()" href="#Home">Home</a>
+        <a class="sidebar-line" onclick="my_close()" href="index.html">Home</a>
         <a class="sidebar-line" onclick="my_close()" href="New-Work.html"
           >New Work</a
         >
@@ -81,6 +69,81 @@
       <p class="footer-p">email@domain.com</p>
       <p class="footer-p">© 2024 Miranda Dershimer</p>
     </footer>
+    <div id="Moon" class="top-page">
+      <h2>Moon Paintings</h2>
+      <div style="padding-bottom: 100px">
+        <table id="myTable">
+          <thead>
+            <tr>
+              <th>Painting</th>
+              <th>Date</th>
+              <th>Moon Phase</th>
+              <th>Cloud Type</th>
+            </tr>
+          </thead>
+          <tr>
+            <td>
+              <img
+                style="width: 150px"
+                src="images/IMG_0272 2.JPG"
+                alt="Moon Painting 1"
+              />
+            </td>
+            <td>09/17/2011</td>
+            <td>Waning Gibbous</td>
+            <td>Stratocumulus</td>
+          </tr>
+          <tr>
+            <td>
+              <img
+                style="width: 150px"
+                src="images/IMG_0407.JPG"
+                alt="Moon Painting 2"
+              />
+            </td>
+            <td>10/03/2011</td>
+            <td>First Quarter</td>
+            <td>Cirrus</td>
+          </tr>
+          <tr>
+            <td>
+              <img
+                style="width: 150px"
+                src="images/IMG_0035 2.JPG"
+                alt="Moon Painting 3"
+              />
+            </td>
+            <td>10/12/2011</td>
+            <td>Full</td>
+            <td>Altostratus</td>
+          </tr>
+          <tr>
+            <td>
+              <img
+                style="width: 150px"
+                src="images/IMG_0406.JPG"
+                alt="Moon Painting 4"
+              />
+            </td>
+            <td>11/09/2011</td>
+            <td>Waxing Gibbous</td>
+            <td>Cirrostratus</td>
+          </tr>
+          <tr>
+            <td>
+              <img
+                style="width: 150px"
+                src="images/IMG_0265.JPG"
+                alt="Moon Painting 5"
+              />
+            </td>
+            <td>05/06/2012</td>
+            <td>Waning Gibbous</td>
+            <td>Cumulus</td>
+          </tr>
+        </table>
+      </div>
+    </div>
     <script>
       var mySidebar = document.getElementById("mySidebar");
 
@@ -96,6 +159,18 @@
       function my_close() {
         mySidebar.style.display = "none";
       }
+
+      // begin added for sortable
+      $(document).ready(function () {
+        $("table#myTable").tablesorter({
+          sortList: [
+            [2, 1],
+          ] /* 1st number - column to sort, 2nd number - asending (2) or descending order (1) */,
+          CssAsc: "tablesorter-headerAsc",
+          CssDesc: "tablesorter-headerDesc",
+        });
+      });
+      // end added for sortable
     </script>
   </body>
 </html>

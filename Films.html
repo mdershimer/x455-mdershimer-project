@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miranda Dershimer Films</title>
+    <link rel="stylesheet" href="css/css.css" />
+    <style></style>
+  </head>
+  <body>
+    <div>
+      <div class="header-bar">
+        <a href="index.html"
+          ><img
+            style="padding: 30px 0px 10px 0px; width: 100%"
+            src="images/name logo 3.png"
+            alt="Miranda Dershimer logo"
+        /></a>
+        <a class="header-text" href="index.html">Home</a>
+        <a class="header-text" href="New-Work.html">New Work</a>
+        <a class="header-text" href="Art.html">Art</a>
+        <a class="header-text" href="Moon.html">Moon</a>
+        <a class="header-text" href="Films.html">Films</a>
+        <a class="header-text" href="Design.html">Design</a>
+        <img class="search-cart-icon" src="images/search and cart icons.png" />
+      </div>
+    </div>
+    <div class="small-logo">
+      <a href="index.html"
+        ><img
+          style="padding: 15px 0px 10px 0px; width: 80%"
+          src="images/name logo 3.png"
+          alt="Miranda Dershimer logo"
+      /></a>
+      <a href="javascript:void(0)" class="hamburger-icon" onclick="my_open()"
+        ><img style="width: 40px" src="images/hamburger icon.png"
+      /></a>
+    </div>
+    <div id="sidebar">
+      <nav class="sidebar" style="display: none" id="mySidebar">
+        <a href="javascript:void(0)" class="sidebar-line" onclick="my_close()"
+          >Close</a
+        >
+        <a class="sidebar-line" onclick="my_close()" href="index.html">Home</a>
+        <a class="sidebar-line" onclick="my_close()" href="New-Work.html"
+          >New Work</a
+        >
+        <a class="sidebar-line" onclick="my_close()" href="Art.html">Art</a>
+        <a class="sidebar-line" onclick="my_close()" href="Moon.html">Moon</a>
+        <a class="sidebar-line" onclick="my_close()" href="Films.html">Films</a>
+        <a class="sidebar-line" onclick="my_close()" href="Design.html"
+          >Design</a
+        >
+      </nav>
+    </div>
+    <footer class="footer">
+      <p class="footer-p">
+        <img style="width: 100px" src="images/sm icons.png" />
+      </p>
+      <p class="footer-p">734-555-5555</p>
+      <p class="footer-p">email@domain.com</p>
+      <p class="footer-p">© 2024 Miranda Dershimer</p>
+    </footer>
+    <div id="Films" class="top-page" style="padding-bottom: 850px">
+      <h2>Films</h2>
+      <div class="video-columns-medium">
+        <div>
+          <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/p4RdB0CYYS4?si=R-EndBXfFiXKqWWN"
+            title="YouTube video player"
+            frameborder="0"
+            allow="autoplay; encrypted-media;"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div style="padding-top: 20px">
+          <button
+            onclick="myAccordion('accordion1')"
+            id="accordionBtn1"
+            class="button"
+          >
+            <h3>
+              Finding Moonlight
+              <img style="width: 10px" src="./images/down carrot.png" />
+            </h3>
+          </button>
+          <div id="accordion1" class="accordion-text-box">
+            <p class="accordion-text">
+              I made this film as a submission to the San Francisco Museum of
+              Fine Art’s local artists show at the DeYoung Museum. The theme was
+              “on the edge,” which I used as a literal boundary for the image in
+              my film, only showing the images on the edges of a square around a
+              center square box holding the text. The film talks about my
+              interest in watching the moonrise, starting from a scientific
+              magazine article I read in college, paintings I made from my moon
+              watches there, and my move to the Bay Area and how I was worried
+              about no longer being able to watch the moon as well.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="video-columns-medium">
+        <div>
+          <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/qu89-2_om38?si=uEj-1vCPb9EK2_zm"
+            title="YouTube video player"
+            frameborder="0"
+            allow="autoplay; encrypted-media;"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div style="padding-top: 20px">
+          <button
+            onclick="myAccordion('accordion2')"
+            id="accordionBtn2"
+            class="button"
+          >
+            <h3>
+              Things <img style="width: 10px" src="./images/down carrot.png" />
+            </h3>
+          </button>
+          <div id="accordion2" class="accordion-text-box">
+            <p class="accordion-text">
+              This is an 8mm film that my father made as a child in the 1970s.
+              It uses a combination of stop-motion techniques and live action to
+              tell the story of an animal landing on a foreign planet and the
+              dangers he encounters there, including alien life. I had a friend
+              who works at a film archive digitize the film for me and
+              color-corrected it as best I could.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="video-columns-medium">
+        <div>
+          <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/lohBhgGEeY0?si=XbBxXWlLbNvplyLB"
+            title="YouTube video player"
+            frameborder="0"
+            allow="autoplay; encrypted-media;"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div style="padding-top: 20px">
+          <button
+            onclick="myAccordion('accordion3')"
+            id="accordionBtn3"
+            class="button"
+          >
+            <h3>
+              Flying Horses Carousel
+              <img style="width: 10px" src="./images/down carrot.png" />
+            </h3>
+          </button>
+          <div id="accordion3" class="accordion-text-box">
+            <p class="accordion-text">
+              This is a fun film I made of myself and my step-brother on the
+              Flying Horses Carousel on the island of Martha’s Vineyard off the
+              coast of Cape Cod in Massachusetts. It is a rare brass ring
+              carousel, where they have standard pewter rings that you can
+              practice grabbing as you ride by, and one golden brass ring that
+              comes out last, and if you catch it you win a free ride. I have
+              been riding the carousel since I was a little girl, and have
+              gotten pretty good at grabbing multiple rings at once. I noticed
+              that while there were a lot of video clips of the carousel on
+              YouTube, there were very few representations of people catching
+              multiple rings at once. My mom recorded these clips of us riding
+              and I edited them with slow motion to show the technique.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var mySidebar = document.getElementById("mySidebar");
+
+      function my_open() {
+        if (mySidebar.style.display === "block") {
+          mySidebar.style.display = "none";
+        } else {
+          mySidebar.style.display = "block";
+        }
+      }
+
+      // Close the sidebar with the close button
+      function my_close() {
+        mySidebar.style.display = "none";
+      }
+      // begin added for accordion
+      function myAccordion(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("my-show") == -1) {
+          x.className += " my-show";
+          x.previousElementSibling.className =
+            x.previousElementSibling.className.replace("w3-brown", "w3-orange");
+        } else {
+          x.className = x.className.replace(" my-show", "");
+          x.previousElementSibling.className =
+            x.previousElementSibling.className.replace("w3-orange", "w3-brown");
+        }
+      }
+      // end added for accordion
+    </script>
+  </body>
+</html>

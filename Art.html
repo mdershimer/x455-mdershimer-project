@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miranda Dershimer Art</title>
+    <link rel="stylesheet" href="css/css.css" />
+    <style></style>
+  </head>
+  <body>
+    <div>
+      <div class="header-bar">
+        <a href="index.html"
+          ><img
+            style="padding: 30px 0px 10px 0px; width: 100%"
+            src="images/name logo 3.png"
+            alt="Miranda Dershimer logo"
+        /></a>
+        <a class="header-text" href="index.html">Home</a>
+        <a class="header-text" href="New-Work.html">New Work</a>
+        <a class="header-text" href="Art.html">Art</a>
+        <a class="header-text" href="Moon.html">Moon</a>
+        <a class="header-text" href="Films.html">Films</a>
+        <a class="header-text" href="Design.html">Design</a>
+        <img class="search-cart-icon" src="images/search and cart icons.png" />
+      </div>
+    </div>
+    <div class="small-logo">
+      <a href="index.html"
+        ><img
+          style="padding: 15px 0px 10px 0px; width: 80%"
+          src="images/name logo 3.png"
+          alt="Miranda Dershimer logo"
+      /></a>
+      <a href="javascript:void(0)" class="hamburger-icon" onclick="my_open()"
+        ><img style="width: 40px" src="images/hamburger icon.png"
+      /></a>
+    </div>
+    <div id="sidebar">
+      <nav class="sidebar" style="display: none" id="mySidebar">
+        <a href="javascript:void(0)" class="sidebar-line" onclick="my_close()"
+          >Close</a
+        >
+        <a class="sidebar-line" onclick="my_close()" href="index.html">Home</a>
+        <a class="sidebar-line" onclick="my_close()" href="New-Work.html"
+          >New Work</a
+        >
+        <a class="sidebar-line" onclick="my_close()" href="Art.html">Art</a>
+        <a class="sidebar-line" onclick="my_close()" href="Moon.html">Moon</a>
+        <a class="sidebar-line" onclick="my_close()" href="Films.html">Films</a>
+        <a class="sidebar-line" onclick="my_close()" href="Design.html"
+          >Design</a
+        >
+      </nav>
+    </div>
+    <footer class="footer">
+      <p class="footer-p">
+        <img style="width: 100px" src="images/sm icons.png" />
+      </p>
+      <p class="footer-p">734-555-5555</p>
+      <p class="footer-p">email@domain.com</p>
+      <p class="footer-p">© 2024 Miranda Dershimer</p>
+    </footer>
+    <div id="Art" class="top-page">
+      <h2>Art</h2>
+      <div>
+        <img
+          style="width: 100%"
+          class="mySlides"
+          src="./images/drawing_1.JPG"
+        />
+        <img
+          style="width: 100%; display: none"
+          class="mySlides"
+          src="./images/drawing-2.JPG"
+        />
+        <img
+          style="width: 100%; display: none"
+          class="mySlides"
+          src="./images/drawing-3.JPG"
+        />
+        <img
+          style="width: 100%; display: none"
+          class="mySlides"
+          src="./images/painting-1.JPG"
+        />
+        <img
+          style="width: 100%; display: none"
+          class="mySlides"
+          src="./images/painting-2.JPG"
+        />
+        <img
+          style="width: 100%; display: none"
+          class="mySlides"
+          src="./images/painting-3.JPG"
+        />
+        <img
+          style="width: 100%; display: none"
+          class="mySlides"
+          src="./images/print-1.JPG"
+        />
+        <img
+          style="width: 100%; display: none"
+          class="mySlides"
+          src="./images/print-2.JPG"
+        />
+        <img
+          style="width: 100%; display: none"
+          class="mySlides"
+          src="./images/print-3.JPG"
+        />
+        <img
+          style="width: 100%; display: none"
+          class="mySlides"
+          src="./images/sculpture-1.JPG"
+        />
+        <img
+          style="width: 100%; display: none"
+          class="mySlides"
+          src="./images/sculpture-2.JPG"
+        />
+        <img
+          style="width: 100%; display: none"
+          class="mySlides"
+          src="./images/sculpture-3.JPG"
+        />
+        <div style="margin: 20px 80px">
+          <div class="thumbnail-columns">
+            <img
+              class="thumbnail-images"
+              style="width: 100%; cursor: pointer"
+              onclick="currentDiv(1)"
+              src="./images/drawing_1.JPG"
+            />
+          </div>
+          <div class="thumbnail-columns">
+            <img
+              class="thumbnail-images"
+              style="width: 100%; cursor: pointer"
+              onclick="currentDiv(2)"
+              src="./images/drawing-2.JPG"
+            />
+          </div>
+          <div class="thumbnail-columns">
+            <img
+              class="thumbnail-images"
+              style="width: 100%; cursor: pointer"
+              onclick="currentDiv(3)"
+              src="./images/drawing-3.JPG"
+            />
+          </div>
+          <div class="thumbnail-columns">
+            <img
+              class="thumbnail-images"
+              style="width: 100%; cursor: pointer"
+              onclick="currentDiv(4)"
+              src="./images/painting-1.JPG"
+            />
+          </div>
+          <div class="thumbnail-columns">
+            <img
+              class="thumbnail-images"
+              style="width: 100%; cursor: pointer"
+              onclick="currentDiv(5)"
+              src="./images/painting-2.JPG"
+            />
+          </div>
+          <div class="thumbnail-columns">
+            <img
+              class="thumbnail-images"
+              style="width: 100%; cursor: pointer"
+              onclick="currentDiv(6)"
+              src="./images/painting-3.JPG"
+            />
+          </div>
+          <div class="thumbnail-columns">
+            <img
+              class="thumbnail-images"
+              style="width: 100%; cursor: pointer"
+              onclick="currentDiv(7)"
+              src="./images/print-1.JPG"
+            />
+          </div>
+          <div class="thumbnail-columns">
+            <img
+              class="thumbnail-images"
+              style="width: 100%; cursor: pointer"
+              onclick="currentDiv(8)"
+              src="./images/print-2.JPG"
+            />
+          </div>
+          <div class="thumbnail-columns">
+            <img
+              class="thumbnail-images"
+              style="width: 100%; cursor: pointer"
+              onclick="currentDiv(9)"
+              src="./images/print-3.JPG"
+            />
+          </div>
+          <div class="thumbnail-columns">
+            <img
+              class="thumbnail-images"
+              style="width: 100%; cursor: pointer"
+              onclick="currentDiv(10)"
+              src="./images/sculpture-1.JPG"
+            />
+          </div>
+          <div class="thumbnail-columns">
+            <img
+              class="thumbnail-images"
+              style="width: 100%; cursor: pointer"
+              onclick="currentDiv(11)"
+              src="./images/sculpture-2.JPG"
+            />
+          </div>
+          <div class="thumbnail-columns">
+            <img
+              class="thumbnail-images"
+              style="width: 100%; cursor: pointer"
+              onclick="currentDiv(12)"
+              src="./images/sculpture-3.JPG"
+            />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div style="text-align: center">
+          <h4>Information about these works:</h4>
+        </div>
+        <div style="padding-bottom: 100px">
+          <div class="scrolling">
+            <p>
+              These are some works of art that I did while I was a student at
+              Amherst College. The drawings were done in an Intro to Drawing
+              course that I took over the summer at UMass Amherst, first in
+              pencil, then charcoal, and then ink. The paintings were done in
+              oil on canvas in Painting I with Prof. Bob Sweeney. The first is
+              monochromatic done in Ivory Black and Titanium White, the second
+              with many colors, and the third with a limited palette of Alizarin
+              Crimson, Yellow Ochre, and Ultramarine Blue (with Ivory Black and
+              Titanium White). The first two were of still lives that the
+              professor set up for us, and the third was a still life that I set
+              up in my dorm room with objects that were meaningful to my life at
+              that time. The prints were made in Printmaking I with Prof. Betsey
+              Garand. The first and third are aquatints and the second is an
+              engraving. The sculptures were made in Sculpture I with Prof.
+              Carol Keller. They are all plaster with chicken wire and burlap
+              armatures.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var mySidebar = document.getElementById("mySidebar");
+
+      function my_open() {
+        if (mySidebar.style.display === "block") {
+          mySidebar.style.display = "none";
+        } else {
+          mySidebar.style.display = "block";
+        }
+      }
+
+      // Close the sidebar with the close button
+      function my_close() {
+        mySidebar.style.display = "none";
+      }
+      // step 2: add javascript to support carousel slideshow feature
+      var myIndex = 0;
+      carousel();
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 3000); // Change image every 3 seconds
+      }
+
+      // slideshow - carousel
+      function currentDiv(n) {
+        showDivs((slideIndex = n));
+        myIndex = n;
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+        }
+        x[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " w3-opacity-off";
+      }
+      // end added for carousel
+    </script>
+  </body>
+</html>
