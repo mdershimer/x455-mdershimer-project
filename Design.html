@@ -61,38 +61,90 @@
       <p class="footer-p">email@domain.com</p>
       <p class="footer-p">© 2024 Miranda Dershimer</p>
     </footer>
-    <div id="Design" class="top-page">
+    <div id="Design" class="top-page" style="padding-bottom: 900px">
       <h2>Design</h2>
-      <img
-        class="design-photos-verticle"
-        src="images/infographic.jpeg"
-        alt="infographic"
-      />
-      <img
-        class="design-photos-horizontal"
-        src="images/magazine.jpg"
-        alt="magazine spread"
-      />
-      <img
-        class="design-photos-verticle"
-        src="images/Koyaanisqatsi.jpg"
-        alt="film poster"
-      />
-      <img
-        class="design-photos-horizontal"
-        src="images/brochure.jpg"
-        alt="open brochure"
-      />
-      <img
-        class="design-photos-verticle"
-        src="images/poster.jpg"
-        alt="event poster"
-      />
-      <img
-        class="design-photos-verticle"
-        src="images/word_art.jpg"
-        alt="carry word art"
-      />
+      <div class="design-spacing">
+        <div class="design-thumbnail-images">
+          <img
+            src="./images/infographic_square.jpeg"
+            style="width: 100%"
+            onclick="document.getElementById('modal01').style.display='block'"
+          />
+        </div>
+        <div class="design-thumbnail-images">
+          <img
+            src="./images/magazine_square.jpeg"
+            style="width: 100%"
+            onclick="document.getElementById('modal02').style.display='block'"
+          />
+        </div>
+        <div class="design-thumbnail-images">
+          <img
+            src="./images/Koyaanisqatsi_square.jpeg"
+            style="width: 100%"
+            onclick="document.getElementById('modal03').style.display='block'"
+          />
+        </div>
+        <div class="design-thumbnail-images">
+          <img
+            src="./images/poster_square.jpeg"
+            style="width: 100%"
+            onclick="document.getElementById('modal04').style.display='block'"
+          />
+        </div>
+        <div class="design-thumbnail-images">
+          <img
+            src="./images/brochure_square.jpeg"
+            style="width: 100%"
+            onclick="document.getElementById('modal05').style.display='block'"
+          />
+        </div>
+        <div class="design-thumbnail-images">
+          <img
+            src="./images/word_art_square.jpeg"
+            style="width: 100%"
+            onclick="document.getElementById('modal06').style.display='block'"
+          />
+        </div>
+      </div>
+      <div>
+        <div id="modal01" class="modal" onclick="this.style.display='none'">
+          <span class="modal-close">Close</span>
+          <div class="modal-content-vertical">
+            <img src="./images/infographic.jpeg" style="width: 100%" />
+          </div>
+        </div>
+        <div id="modal02" class="modal" onclick="this.style.display='none'">
+          <span class="modal-close">Close</span>
+          <div class="modal-content-horizontal">
+            <img src="./images/magazine.jpg" style="width: 100%" />
+          </div>
+        </div>
+        <div id="modal03" class="modal" onclick="this.style.display='none'">
+          <span class="modal-close">Close</span>
+          <div class="modal-content-vertical">
+            <img src="./images/Koyaanisqatsi.jpg" style="width: 100%" />
+          </div>
+        </div>
+        <div id="modal04" class="modal" onclick="this.style.display='none'">
+          <span class="modal-close">Close</span>
+          <div class="modal-content-vertical">
+            <img src="./images/poster.jpg" style="width: 100%" />
+          </div>
+        </div>
+        <div id="modal05" class="modal" onclick="this.style.display='none'">
+          <span class="modal-close">Close</span>
+          <div class="modal-content-horizontal">
+            <img src="./images/brochure.jpg" style="width: 100%" />
+          </div>
+        </div>
+        <div id="modal06" class="modal" onclick="this.style.display='none'">
+          <span class="modal-close">Close</span>
+          <div class="modal-content-vertical">
+            <img src="./images/word_art.jpg" style="width: 100%" />
+          </div>
+        </div>
+      </div>
     </div>
     <script>
       var mySidebar = document.getElementById("mySidebar");
